@@ -9,15 +9,16 @@ exports.index = function(response) {
 }
 
 exports.listfiles = function(response) {
-
+    var data = {
+        title: 'List of files'
+    };
+    view.render('fileList', response, data);
 }
 exports.error = function(errorObj, response) {
     var data = {
         title: 'Error',
         msg: errorObj.message
     };
-
     response.statusCode = errorObj.status;
-
     view.render('error', response, data);
 }
