@@ -1,7 +1,0 @@
-{
-	"name": "file-manager-lesson",
-	"version": "0.0.1",
-	"dependencies": {
-		"async": "~0.2.10"
-	}
-}
